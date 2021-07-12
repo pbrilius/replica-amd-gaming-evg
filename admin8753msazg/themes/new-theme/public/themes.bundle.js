@@ -4,22 +4,16 @@ window.themes=function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Open Software License (OSL 3.0)
+ * This source file is subject to the Academic Free License version 3.0
  * that is bundled with this package in the file LICENSE.md.
  * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/OSL-3.0
+ * https://opensource.org/licenses/AFL-3.0
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@prestashop.com so we can send you a copy immediately.
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
  * @author    PrestaShop SA and Contributors <contact@prestashop.com>
  * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License version 3.0
  */
 t.default={multiStoreRestrictionCheckbox:".js-multi-store-restriction-checkbox",multiStoreRestrictionSwitch:".js-multi-store-restriction-switch"}},5:function(e,t){var n=e.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},538:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var o=n(426),u=r(o),i=n(427),c=r(i),a=n(389),f=r(a),l=n(425),s=r(l);(0,window.$)(function(){new u.default,new f.default,new c.default,new s.default})},6:function(e,t,n){var r=n(11),o=n(17),u=n(13),i=Object.defineProperty;t.f=n(2)?Object.defineProperty:function(e,t,n){if(r(e),t=u(t,!0),r(n),o)try{return i(e,t,n)}catch(e){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(e[t]=n.value),e}},7:function(e,t){e.exports=function(e){try{return!!e()}catch(e){return!0}}},8:function(e,t,n){var r=n(5),o=n(3),u=n(15),i=n(10),c=function(e,t,n){var a,f,l,s=e&c.F,d=e&c.G,p=e&c.S,h=e&c.P,m=e&c.B,v=e&c.W,y=d?o:o[t]||(o[t]={}),_=y.prototype,b=d?r:p?r[t]:(r[t]||{}).prototype;d&&(n=t);for(a in n)(f=!s&&b&&void 0!==b[a])&&a in y||(l=f?b[a]:n[a],y[a]=d&&"function"!=typeof b[a]?n[a]:m&&f?u(l,r):v&&b[a]==l?function(e){var t=function(t,n,r){if(this instanceof e){switch(arguments.length){case 0:return new e;case 1:return new e(t);case 2:return new e(t,n)}return new e(t,n,r)}return e.apply(this,arguments)};return t.prototype=e.prototype,t}(l):h&&"function"==typeof l?u(Function.call,l):l,h&&((y.virtual||(y.virtual={}))[a]=l,e&c.R&&_&&!_[a]&&i(_,a,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,e.exports=c}});

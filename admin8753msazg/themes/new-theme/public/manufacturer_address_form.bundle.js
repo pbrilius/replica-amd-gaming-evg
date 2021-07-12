@@ -4,23 +4,17 @@ window.manufacturer_address_form=function(t){function n(r){if(e[r])return e[r].e
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Open Software License (OSL 3.0)
+ * This source file is subject to the Academic Free License version 3.0
  * that is bundled with this package in the file LICENSE.md.
  * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/OSL-3.0
+ * https://opensource.org/licenses/AFL-3.0
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@prestashop.com so we can send you a copy immediately.
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
  * @author    PrestaShop SA and Contributors <contact@prestashop.com>
  * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License version 3.0
  */
 n.default={manufacturerAddressCountrySelect:"#manufacturer_address_id_country",manufacturerAddressStateSelect:"#manufacturer_address_id_state",manufacturerAddressStateBlock:".js-manufacturer-address-state",manufacturerAddressDniInput:"#manufacturer_address_dni",manufacturerAddressDniInputLabel:'label[for="manufacturer_address_dni"]'}},43:function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},46:function(t,n,e){var r=e(38);t.exports=function(t){return Object(r(t))}},47:function(t,n,e){var r=e(50)("keys"),u=e(43);t.exports=function(t){return r[t]||(r[t]=u(t))}},48:function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},49:function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},5:function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},50:function(t,n,e){var r=e(5),u=r["__core-js_shared__"]||(r["__core-js_shared__"]={});t.exports=function(t){return u[t]||(u[t]={})}},502:function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var u=e(142),o=r(u),c=e(408),i=r(c),a=e(141),f=r(a);/**
                    * Copyright since 2007 PrestaShop SA and Contributors

@@ -4,23 +4,17 @@ window.customer_address_form=function(t){function e(r){if(n[r])return n[r].expor
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the Open Software License (OSL 3.0)
+ * This source file is subject to the Academic Free License version 3.0
  * that is bundled with this package in the file LICENSE.md.
  * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/OSL-3.0
+ * https://opensource.org/licenses/AFL-3.0
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@prestashop.com so we can send you a copy immediately.
  *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
- * versions in the future. If you wish to customize PrestaShop for your
- * needs please refer to https://devdocs.prestashop.com/ for more information.
- *
  * @author    PrestaShop SA and Contributors <contact@prestashop.com>
  * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License version 3.0
  */
 e.default={addressEmailInput:"#customer_address_customer_email",addressFirstnameInput:"#customer_address_first_name",addressLastnameInput:"#customer_address_last_name",addressCompanyInput:"#customer_address_company",addressCountrySelect:"#customer_address_id_country",addressStateSelect:"#customer_address_id_state",addressStateBlock:".js-address-state-select",addressDniInput:"#customer_address_dni",addressDniInputLabel:'label[for="customer_address_dni"]',addressPostcodeInput:"#customer_address_postcode",addressPostcodeInputLabel:'label[for="customer_address_postcode"]'}},4:function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},43:function(t,e){var n=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+r).toString(36))}},46:function(t,e,n){var r=n(38);t.exports=function(t){return Object(r(t))}},468:function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=n(375),u=r(o),i=n(142),a=r(i),c=n(141),s=r(c),f=n(374),d=r(f),l=n(393),p=r(l);/**
                     * Copyright since 2007 PrestaShop SA and Contributors

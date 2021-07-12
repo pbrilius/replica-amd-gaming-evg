@@ -64,16 +64,16 @@ class pbgroupeu extends Module
     $output = null;
 
     if (Tools::isSubmit('submit'.$this->name)) {
-        $myModuleName = strval(Tools::getValue('PBGROUPEU_NAME'));
+        $fileName = strval(Tools::getValue('PBGROUPEU_FILE'));
 
         if (
-            !$myModuleName ||
-            empty($myModuleName) ||
-            !Validate::isGenericName($myModuleName)
+            !$fileName ||
+            empty($fileName) ||
+            !Validate::isGenericName($fileName)
         ) {
             $output .= $this->displayError($this->l('Invalid Stock Image value'));
         } else {
-            Configuration::updateValue('PBGROUPEU_NAME', $myModuleName);
+            Configuration::updateValue('PBGROUPEU_FILE', $fileName);
             $output .= $this->displayConfirmation($this->l('Settings updated'));
         }
     }
@@ -93,9 +93,9 @@ class pbgroupeu extends Module
           ],
           'input' => [
               [
-                  'type' => 'text',
+                  'type' => 'file',
                   'label' => $this->l('Stock Image value'),
-                  'name' => 'PBGROUPEU_NAME',
+                  'name' => 'PBGROUPEU_FILE',
                   'size' => 20,
                   'required' => true
               ]
@@ -136,7 +136,7 @@ class pbgroupeu extends Module
       ];
 
       // Load current value
-      $helper->fields_value['PBGROUPEU_NAME'] = Tools::getValue('PBGROUPEU_NAME', Configuration::get('PBGROUPEU_NAME'));
+      $helper->fields_value['PBGROUPEU_FILE'] = Tools::getValue('PBGROUPEU_FILE', Configuration::get('PBGROUPEU_FILE'));
 
       return $helper->generateForm($fieldsForm);
   }

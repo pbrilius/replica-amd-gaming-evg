@@ -116,3 +116,4 @@
 [2021-07-12 15:49:47] app.INFO: Exporting mail with theme modern for language lietuvių kalba (Lithuanian) [] []
 [2021-07-12 15:49:47] app.INFO: Core output folder: /home/povilasbrilius/.atom-projects/prestashop-collide/mails [] []
 [2021-07-12 15:49:47] app.INFO: Modules output folder: /home/povilasbrilius/.atom-projects/prestashop-collide/modules/ [] []
+[2021-07-12 19:22:36] request.CRITICAL: Uncaught PHP Exception Symfony\Component\Debug\Exception\UndefinedFunctionException: "Attempted to call function "d" from the global namespace." at /home/povilasbrilius/.atom-projects/prestashop-collide/modules/pbgroupeu/pbgroupeu.php line 69 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\UndefinedFunctionException(code: 0): Attempted to call function \"d\" from the global namespace. at /home/povilasbrilius/.atom-projects/prestashop-collide/modules/pbgroupeu/pbgroupeu.php:69)"} []

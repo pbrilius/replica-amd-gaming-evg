@@ -96,7 +96,6 @@ class pbgroupeu extends Module
                   'type' => 'file',
                   'label' => $this->l('Stock Image value'),
                   'name' => 'PBGROUPEU_FILE',
-                  'size' => 20,
                   'required' => true
               ]
           ],

@@ -58,7 +58,7 @@ class pbgroupeu extends Module
 
     if (!parent::install() ||
       !$this->registerHook('leftColumn') ||
-      !$this->registerHook('header') ||
+      !$this->registerHook('actionFrontControllerSetMedia') ||
       !Configuration::updateValue('PBGROUPEU_NAME', ' pbgroupeu')
     ) {
       return false;
@@ -157,5 +157,41 @@ class pbgroupeu extends Module
       $helper->fields_value['PBGROUPEU_FILE'] = Tools::getValue('PBGROUPEU_FILE', Configuration::get('PBGROUPEU_FILE'));
 
       return $helper->generateForm($fieldsForm);
+  }
+
+  public function hookDisplayLeftColumn($params)
+  {
+    $this->context->smarty->assign([
+      'pbgroupeu_name' => Configuration::get('PBGROUPEU_NAME'),
+      'pbgroupeu_link' => $this->context->link->getModuleLink('pbgroupeu', 'display'),
+    ]);
+
+    return $this->display(__FILE__, 'pbgroupeu.tpl');
+  }
+
+  public function hookDisplayRightColumn($params)
+  {
+    return $this->hookdDisplayLeftCOlumn($params);
+  }
+
+  public function hookActionFrontControllerSetMedia()
+  {
+    $this->context->controller->registerStylesheet(
+      'pbgroupeu-style',
+      $this->_path . 'views/css/pbgroupeu.css',
+      [
+        'media' => 'all',
+        'priority' => 1000,
+      ]
+    );
+
+    $this->context->controller->registerJavascript(
+      'pbgroupeu-javascript',
+      $this->_path . 'views/js/pbgroupeu.js',
+      [
+        'position' => 'bottom',
+        'priority' => 1000,
+      ]
+    );
   }
 }
